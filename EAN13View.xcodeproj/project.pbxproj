@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		6EC10BE5231EBCB500333EB9 /* EAN13View.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC10BE3231EBCB500333EB9 /* EAN13View.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EC10BED231EBD3100333EB9 /* EAN13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC10BEC231EBD3100333EB9 /* EAN13.swift */; };
+		6EC10BF1231EBD5C00333EB9 /* EAN13Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC10BF0231EBD5C00333EB9 /* EAN13Validator.swift */; };
+		6EC10BF3231EBD7600333EB9 /* EAN13BarcodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC10BF2231EBD7600333EB9 /* EAN13BarcodeGenerator.swift */; };
+		6EC10BF5231EBDC800333EB9 /* String+EAN13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC10BF4231EBDC800333EB9 /* String+EAN13.swift */; };
+		6EC10BF8231EBE2A00333EB9 /* EAN13View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC10BF7231EBE2A00333EB9 /* EAN13View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6EC10BE0231EBCB500333EB9 /* EAN13View.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EAN13View.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC10BE3231EBCB500333EB9 /* EAN13View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAN13View.h; sourceTree = "<group>"; };
 		6EC10BE4231EBCB500333EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EC10BEC231EBD3100333EB9 /* EAN13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAN13.swift; sourceTree = "<group>"; };
+		6EC10BF0231EBD5C00333EB9 /* EAN13Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAN13Validator.swift; sourceTree = "<group>"; };
+		6EC10BF2231EBD7600333EB9 /* EAN13BarcodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAN13BarcodeGenerator.swift; sourceTree = "<group>"; };
+		6EC10BF4231EBDC800333EB9 /* String+EAN13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EAN13.swift"; sourceTree = "<group>"; };
+		6EC10BF7231EBE2A00333EB9 /* EAN13View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAN13View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +56,23 @@
 		6EC10BE2231EBCB500333EB9 /* EAN13View */ = {
 			isa = PBXGroup;
 			children = (
+				6EC10BEB231EBCDA00333EB9 /* Source */,
 				6EC10BE3231EBCB500333EB9 /* EAN13View.h */,
 				6EC10BE4231EBCB500333EB9 /* Info.plist */,
 			);
 			path = EAN13View;
+			sourceTree = "<group>";
+		};
+		6EC10BEB231EBCDA00333EB9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6EC10BEC231EBD3100333EB9 /* EAN13.swift */,
+				6EC10BF0231EBD5C00333EB9 /* EAN13Validator.swift */,
+				6EC10BF2231EBD7600333EB9 /* EAN13BarcodeGenerator.swift */,
+				6EC10BF4231EBDC800333EB9 /* String+EAN13.swift */,
+				6EC10BF7231EBE2A00333EB9 /* EAN13View.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,11 +113,13 @@
 		6EC10BD7231EBCB500333EB9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Daniel K. Poulsen";
 				TargetAttributes = {
 					6EC10BDF231EBCB500333EB9 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -130,6 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC10BF1231EBD5C00333EB9 /* EAN13Validator.swift in Sources */,
+				6EC10BF3231EBD7600333EB9 /* EAN13BarcodeGenerator.swift in Sources */,
+				6EC10BF8231EBE2A00333EB9 /* EAN13View.swift in Sources */,
+				6EC10BF5231EBDC800333EB9 /* String+EAN13.swift in Sources */,
+				6EC10BED231EBD3100333EB9 /* EAN13.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +291,7 @@
 		6EC10BE9231EBCB500333EB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dkp.EAN13View;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +317,7 @@
 		6EC10BEA231EBCB500333EB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
