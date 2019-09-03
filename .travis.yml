@@ -1,0 +1,7 @@
+language: swift
+xcode_project: EAN13View.xcodeproj
+xcode_scheme: EAN13View
+osx_image: xcode11
+script:
+- set -o pipefail
+- xcodebuild -project EAN13View.xcodeproj -scheme EAN13View -destination 'platform=iOS Simulator,name=iPhone Xʀ' build | xcpretty

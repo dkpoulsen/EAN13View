@@ -13,6 +13,7 @@
 		6EC10BF3231EBD7600333EB9 /* EAN13BarcodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC10BF2231EBD7600333EB9 /* EAN13BarcodeGenerator.swift */; };
 		6EC10BF5231EBDC800333EB9 /* String+EAN13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC10BF4231EBDC800333EB9 /* String+EAN13.swift */; };
 		6EC10BF8231EBE2A00333EB9 /* EAN13View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC10BF7231EBE2A00333EB9 /* EAN13View.swift */; };
+		6EC10C0A231ECAA300333EB9 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6EC10C09231ECAA300333EB9 /* .travis.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		6EC10BF2231EBD7600333EB9 /* EAN13BarcodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAN13BarcodeGenerator.swift; sourceTree = "<group>"; };
 		6EC10BF4231EBDC800333EB9 /* String+EAN13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EAN13.swift"; sourceTree = "<group>"; };
 		6EC10BF7231EBE2A00333EB9 /* EAN13View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAN13View.swift; sourceTree = "<group>"; };
+		6EC10C08231EC95F00333EB9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6EC10C09231ECAA300333EB9 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,8 @@
 		6EC10BD6231EBCB500333EB9 = {
 			isa = PBXGroup;
 			children = (
+				6EC10C09231ECAA300333EB9 /* .travis.yml */,
+				6EC10C08231EC95F00333EB9 /* README.md */,
 				6EC10BE2231EBCB500333EB9 /* EAN13View */,
 				6EC10BE1231EBCB500333EB9 /* Products */,
 			);
@@ -145,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC10C0A231ECAA300333EB9 /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
