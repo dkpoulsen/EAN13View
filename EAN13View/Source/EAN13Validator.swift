@@ -3,13 +3,18 @@ struct EAN13Validator{
     func isValid(value: [Int]) -> Bool{
         guard value.count == 13 else { return false }
         
-        let even = value.prefix(12).filter{$0 % 2 == 0}.reduce(0) { a, b in
-            a + b
+        var sumOddPosition = 0
+        var sumEvenPosition = 0
+        
+        for (index, digit) in value.prefix(12).enumerated() {
+            if index % 2 == 0 {
+                sumOddPosition += digit
+            } else {
+                sumEvenPosition += digit
+            }
         }
-        let odd = value.prefix(12).filter{$0 % 2 == 1}.reduce(0) { a, b in
-            a + b
-        }
-        let checkDigit = (10 - (even + odd * 3) % 10) % 10
-        return value.last! == checkDigit
+        
+        let checkDigit = (10 - (sumOddPosition + sumEvenPosition * 3) % 10) % 10
+        return value.last == checkDigit
     }
 }
