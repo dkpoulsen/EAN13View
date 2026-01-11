@@ -6,7 +6,7 @@ public struct EAN13{
     
     let lines: [Bool]
     
-    private let value: String
+    public let value: String
     private let validator = EAN13Validator()
     
     public init(value: String) throws {
