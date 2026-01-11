@@ -19,5 +19,9 @@ let package = Package(
             path: "EAN13View/Source",
             publicHeadersPath: ".."
         ),
+        .testTarget(
+            name: "EAN13ViewTests",
+            dependencies: ["EAN13View"]
+        ),
     ]
 )
